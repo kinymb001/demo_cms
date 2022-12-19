@@ -17,8 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->integer('category_id');
-            $table->integer('tag_id');
+            $table->string('description');
+            $table->string('content');
+            $table->foreignId('category_id');
+            $table->foreignId('tag_id');
             $table->timestamps();
         });
     }
@@ -28,6 +30,9 @@ return new class extends Migration
      *
      * @return void
      */
+
+
+
     public function down()
     {
         Schema::dropIfExists('posts');

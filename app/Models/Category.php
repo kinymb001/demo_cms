@@ -11,6 +11,12 @@ class Category extends Model
     protected $table = 'categories';
     protected $guarded = ['id'];
 
+    public function post(){
+        return $this->hasMany(Post::class);
+    }
 
+    public function scopeTest($query, $name){
+        return $query->where('name', $name);
+    }
 
 }

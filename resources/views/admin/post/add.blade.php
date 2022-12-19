@@ -38,6 +38,14 @@
                             <input type="text" class="form-control" name="name" placeholder="enter Post name">
                         </div>
                         <div class="form-group">
+                            <label for="exampleInputEmail1">Post description</label>
+                            <input type="text" class="form-control" name="description" placeholder="enter Post description">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Post content</label>
+                            <input type="text" class="form-control" name="content" placeholder="enter Post content">
+                        </div>
+                        <div class="form-group">
                             <label for="exampleInputEmail1">Category ID</label>
                             <input type="text" class="form-control" name="category_id" placeholder="enter Category ID name">
                         </div>

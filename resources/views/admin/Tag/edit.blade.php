@@ -35,7 +35,15 @@
                         @csrf
                         <div class="form-group">
                             <label for="exampleInputEmail1">Tag  Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="name">
+                            <input type="text" class="form-control" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tag  Description</label>
+                            <input type="text" class="form-control" name="description" placeholder="Description">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tag  Content</label>
+                            <input type="text" class="form-control" name="content" placeholder="Content">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

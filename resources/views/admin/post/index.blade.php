@@ -40,9 +40,10 @@
                             <tr>
                                 <th scope="col">STT</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Content</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">Tag</th>
-                                <th scope="col">Created At</th>
                                 <th scope="col" width="5%">Sửa</th>
                                 <th scope="col" width="5%">Xóa</th>
                             </tr>
@@ -52,14 +53,15 @@
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $item->name }}</td>
-                                    <td>{{ $item->category_id }}</td>
-                                    <td>{{ $item->tag_id }}</td>
-                                    <td>{{ $item->created_at }}</td>
+                                    <td>{{ $item->description }}</td>
+                                    <td>{{ $item->content }}</td>
+                                    <td>{{ $item->category->name }}</td>
+                                    <td>{{ $item->tag->name }}</td>
                                     <td>
                                         <a href="{{ route('admin.posts.getEdit', ['id'=>$item->id]) }}" class="btn btn-warning btn-sm">Sửa</a>
                                     </td>
                                     <td>
-                                        <a onclick="return confirm('Ban Chac Chan Muon Xoa??')" href="{{ route('admin.posts.delete', ['id'=>$item->id]) }}" methods="post" class="btn-block btn-danger btn-sm action_delete">
+                                        <a onclick="return confirm('Ban Chac Chan Muon Xoa??')" href="{{ route('admin.posts.delete', ['id'=>$item->id]) }}" methods="post" class="btn btn-block btn-danger btn-sm action_delete">
                                             Xóa
                                         </a>
                                     </td>
