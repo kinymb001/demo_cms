@@ -40,6 +40,7 @@
                             <tr>
                                 <th scope="col">STT</th>
                                 <th scope="col">Name</th>
+                                <th scope="col">Thumb</th>
                                 <th scope="col">Description</th>
                                 <th scope="col">Content</th>
                                 <th scope="col">Category</th>
@@ -53,6 +54,7 @@
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $item->name }}</td>
+                                    <td><img src="{{ asset($item->thumb) }}" style="width: 100px; object-fit: cover; max-width: 100%" alt=""></td>
                                     <td>{{ $item->description }}</td>
                                     <td>{{ $item->content }}</td>
                                     <td>{{ $item->category->name }}</td>

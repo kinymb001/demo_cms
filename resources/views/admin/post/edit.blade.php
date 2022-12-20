@@ -31,16 +31,26 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <form action="{{ route('admin.posts.edit', ['id'=>$id]) }}" method="post">
+                    <form action="{{ route('admin.posts.edit', ['id'=>$id]) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="exampleInputEmail1">Post Name</label>
                             <input type="text" class="form-control" name="name" placeholder="enter Post name">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Describe</label>
-                            <input type="text" class="form-control" name="describe" placeholder="enter Describe name">
+                            <label>Ảnh bài viết</label>
+                            <input type="file" id="upload" onchange="loadFile(event)" name="thumb">
+                            <img id="output" style="max-width: 500px; object-fit: cover">
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Post Description</label>
+                            <input type="text" class="form-control" name="description" placeholder="enter Post description">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Post Content</label>
+                            <input type="text" class="form-control" name="content" placeholder="enter Post content">
+                        </div>
+                        <div class="form-group">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Category ID</label>
                             <input type="text" class="form-control" name="category_id" placeholder="enter Category ID name">
@@ -59,7 +69,17 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
+@endsection
+@section('script')
+    <script>
+        var loadFile = function (event) {
+            var output = document.getElementById('output');
+            output.src = URL.createObjectURL(event.target.files[0]);
+            output.onload = function () {
+                URL.revokeObjectURL(output.src) // free memory
+            }
+        };
+    </script>
 @endsection
 
 

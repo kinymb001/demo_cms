@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('description');
             $table->string('content');
+            $table->longText('thumb');
             $table->foreignId('category_id');
             $table->foreignId('tag_id');
             $table->timestamps();
