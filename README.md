@@ -2,11 +2,11 @@
 **Admin**
 - [X] Giao diện admin
 - [X] Login, Logout
-- [ ] Quản lý user và phân quyền
+- [X] Quản lý user và phân quyền
 - [X] CRUD Article/Category/Tag
 - [ ] Filter Dứ liệu theo một số trường
 - [ ] Kết nối và lưu trữ ảnh bằng MinIO thông qua s3 driver
-- [ ] Hiện thị Logs
+- [X] Hiện thị Logs
 - [X] Dashboard
 
 **Frontend**

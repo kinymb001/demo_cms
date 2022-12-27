@@ -19,9 +19,9 @@ class UserController extends Controller
     {
         //$role = Role::create(['name' => 'publisher']);
         //$permission = Permission::create(['name' => 'edit user']);
-        // $role = Role::findById(4);
-        // $permission = Permission::findById(40);
-        // $role->givePermissionTo($permission);
+        $role = Role::findById(90);
+        $permission = Permission::findById(4);
+        $role->givePermissionTo($permission);
         return view('admin.users.index');
     }
 
