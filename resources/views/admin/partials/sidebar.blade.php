@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="{{ asset('index3.html') }}" class="brand-link">
         <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light">Admin</span>
     </a>
 
     <!-- Sidebar -->
@@ -14,7 +14,7 @@
                 <img src="{{ asset('dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="#" class="d-block">kin vu</a>
             </div>
         </div>
 
@@ -56,6 +56,24 @@
                         <p>
                             Posts
                         </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.users.index') }}" class="nav-link">
+                        <i class="nav-icon fa fa-user" aria-hidden="true"></i>
+                        <p>Users</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fa fa-window-close" aria-hidden="true"></i>
+                        <p>Permissions</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ asset('admin/log-viewer') }}" class="nav-link">
+                        <i class="nav-icon fa fa-window-close" aria-hidden="true"></i>
+                        <p>Log-View</p>
                     </a>
                 </li>
             </ul>

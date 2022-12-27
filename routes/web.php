@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\TagController;
 use App\Http\Controllers\admin\PostController;
+use App\Http\Controllers\admin\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -81,6 +82,11 @@ Route::middleware('auth')->group(function (){
                     Route::get('/edit/{id}', [PostController::class, 'getEdit'])->name('getEdit');
                     Route::post('/edit/{id}', [PostController::class, 'edit'])->name('edit');
                     Route::get('/delete/{id}', [PostController::class, 'delete'])->name('delete');
+                });
+
+            Route::prefix('/user')->name('users.')
+                ->group(function (){
+                    Route::get('/', [UserController::class, 'index'])->name('index');
                 });
         });
 });

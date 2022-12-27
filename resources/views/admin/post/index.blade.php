@@ -2,7 +2,7 @@
 @extends('admin.layouts.admin')
 
 @section('title')
-    <title>Danh sách post</title>
+    <title>Post List</title>
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ asset('admin') }}">Home</a></li>
                             <li class="breadcrumb-item active">Post List</li>
                         </ol>
                     </div><!-- /.col -->

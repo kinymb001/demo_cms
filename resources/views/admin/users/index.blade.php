@@ -2,7 +2,7 @@
 @extends('admin.layouts.admin')
 
 @section('title')
-    <title>Add Category</title>
+    <title>Users List</title>
 @endsection
 
 @section('content')
@@ -14,12 +14,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Add Category Page</h1>
+                        <h1 class="m-0">Users List</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{ asset('admin') }}">Home</a></li>
-                            <li class="breadcrumb-item active">Add Category Page</li>
+                            <li class="breadcrumb-item active">Users List</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -30,15 +30,27 @@
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
-                <div class="row col-md-4">
-                    <form action="{{ route('admin.categories.store') }}" method="post">
-                        @csrf
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Category Name</label>
-                            <input type="text" class="form-control" name="name" placeholder="enter category name">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-success float-right m-2">Add User</a>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Slug</th>
+                                <th scope="col">Created At</th>
+                                <th scope="col" width="5%">Sửa</th>
+                                <th scope="col" width="5%">Xóa</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <!-- /.row -->
             </div><!-- /.container-fluid -->

@@ -2,7 +2,7 @@
 @extends('admin.layouts.admin')
 
 @section('title')
-    <title>Thêm Post</title>
+    <title>Add Post</title>
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ asset('admin') }}">Home</a></li>
                             <li class="breadcrumb-item active">Add Post Page</li>
                         </ol>
                     </div><!-- /.col -->
@@ -77,7 +77,7 @@
             var output = document.getElementById('output');
             output.src = URL.createObjectURL(event.target.files[0]);
             output.onload = function () {
-                URL.revokeObjectURL(output.src) // free memory
+                URL.revokeObjectURL(output.src)
             }
         };
     </script>

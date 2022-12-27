@@ -2,7 +2,7 @@
 @extends('admin.layouts.admin')
 
 @section('title')
-    <title>Danh sách sản phẩm</title>
+    <title>Category List</title>
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ asset('admin') }}">Home</a></li>
                             <li class="breadcrumb-item active">Categories List</li>
                         </ol>
                     </div><!-- /.col -->
@@ -32,7 +32,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="{{ route('admin.categories.getFormAdd') }}" class="btn btn-success float-right m-2">Thêm Sản Phẩm</a>
+                        <a href="{{ route('admin.categories.getFormAdd') }}" class="btn btn-success float-right m-2">Add List</a>
                     </div>
                     <div class="col-md-12">
                         <table class="table">
@@ -54,11 +54,11 @@
                                     <td>{{ $item->slug }}</td>
                                     <td>{{ $item->created_at }}</td>
                                     <td>
-                                        <a href="{{ route('admin.categories.getEdit', ['id'=>$item->id]) }}" class="btn btn-warning btn-sm">Sửa</a>
+                                        <a href="{{ route('admin.categories.getEdit', ['id'=>$item->id]) }}" class="btn btn-warning btn-sm">Edit</a>
                                     </td>
                                     <td>
-                                        <a onclick="return confirm('Ban Chac Chan Muon Xoa??')" href="{{ route('admin.categories.delete', ['id'=>$item->id]) }}" methods="post" class="btn-block btn-danger btn-sm action_delete">
-                                            Xóa
+                                        <a onclick="return confirm('Ban Chac Chan Muon Xoa??')" href="{{ route('admin.categories.delete', ['id'=>$item->id]) }}" methods="post" class="btn btn-block btn-danger btn-sm action_delete">
+                                            Delete
                                         </a>
                                     </td>
                                 </tr>
