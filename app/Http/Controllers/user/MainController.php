@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\user;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\User;
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
+use App\Models\Category;
+use App\Models\Tag;
+use App\Models\Post;
+use Illuminate\Http\Request;
 
-class UserController extends Controller
+class MainController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +18,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //$role = Role::create(['name' => 'publisher']);
-        //$permission = Permission::create(['name' => 'edit user']);
-        // $role = Role::findById(90);
-        // $permission = Permission::findById(4);
-        // $role->givePermissionTo($permission);
-        return view('admin.users.index');
+        //
     }
 
     /**

@@ -53,12 +53,22 @@
                             <input type="text" class="form-control" name="content" placeholder="enter Post content">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Category ID</label>
-                            <input type="text" class="form-control" name="category_id" placeholder="enter Category ID name">
+                            <label for="exampleFormControlSelect1">Category</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="category_id">
+                                @foreach ($data['category'] as $item)
+
+                                    <option value="{{$item->id}}">{{$item->name}}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Tag ID</label>
-                            <input type="text" class="form-control" name="tag_id" placeholder="enter Tag ID name">
+                            <label for="exampleFormControlSelect1">Category</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="tag_id">
+                                @foreach ($data['tag'] as $item)
+
+                                    <option value="{{$item->id}}">{{$item->name}}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

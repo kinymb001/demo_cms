@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -16,7 +18,9 @@ class PostController extends Controller
     }
 
     public function create(){
-        return view('admin.post.add');
+        $data['category'] = Category::all();
+        $data['tag'] = Tag::all();
+        return view('admin.post.add', compact('data'));
     }
 
     public function store(Request $request){
