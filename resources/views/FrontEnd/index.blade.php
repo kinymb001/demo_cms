@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./frontend/css/style.css">
 </head>
 <body>
     <header class="header">
@@ -23,11 +23,11 @@
             <a href="#" class="menu-item" style="border-bottom-style:solid;border-bottom-color:#D93C23;border-radius: 1px;opacity:1">Blog</a>
         </div>
         <div class="header-logo">
-            <img src="./assets/images/logo.png" alt="" class="logo-image">
+            <img src="./frontend/image/logo.png" alt="" class="logo-image">
         </div>
         <div class="header-user">
-            <img src="./assets/images/Notification.png" alt="" class="logo-icon2">
-            <img src="./assets/images/icon.png" alt="" class="logo-icon">
+            <img src="./frontend/image/Notification.png" alt="" class="logo-icon2">
+            <img src="./frontend/image/icon.png" alt="" class="logo-icon">
             <button class="btn">Đăng Bài</button>
 
             <div class="user">
@@ -39,7 +39,7 @@
     </header>
     <div class="menu_mobile">
         <div class="mobile_header">
-            <a href="#" class="mobile_close fa-solid fa-x"><img src="./assets/images/logo.png" alt="" class="mobile_logo"></a>
+            <a href="#" class="mobile_close fa-solid fa-x"><img src="./frontend/image/logo.png" alt="" class="mobile_logo"></a>
         </div>
         <ul class="mobile_list">
             <li class="mb_item">Mua nhà</li>
@@ -55,9 +55,9 @@
     </div>
 
         <div class="slider">
-            <div class="slide" style="background-image: url(./assets/images/slider.png);">
-                <img src="./assets/images/logoslider.png" alt="" class="logo-slider">
-                <img src="./assets/images/logoslider1.png" alt="" class="logo-slider1">
+            <div class="slide" style="background-image: url(./frontend/image/slider.png);">
+                <img src="./frontend/image/logoslider.png" alt="" class="logo-slider">
+                <img src="./frontend/image/logoslider1.png" alt="" class="logo-slider1">
             </div>
         </div>
 
@@ -74,7 +74,7 @@
         </div>
 
                 <div class="tin-tuc">
-                    <img src="./assets/images/img.png" alt="" class="tin-img">
+                    <img src="./frontend/image/img.png" alt="" class="tin-img">
                     <p class="tin-new">Tin tức</p>
                 </div>
 
@@ -82,8 +82,8 @@
             <div class="cnt-1">
                 <a href="chitiet.html" class="cnt-detail-l">
                     <div class="cnt-img">
-                        <img src="./assets/images/cnt_home.png" alt="" class="cnt-img-l">
-                        <img src="./assets/images/heart.png" alt="" class="cnt-icon">
+                        <img src="./frontend/image/cnt_home.png" alt="" class="cnt-img-l">
+                        <img src="./frontend/image/heart.png" alt="" class="cnt-icon">
                     </div>
                     <h1 class="cnt-title-l">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</h1>
                     <div class="cnt-des">
@@ -100,8 +100,8 @@
 
                 <div class="cnt-2">
                     <a href="chitiet.html" class="cnt-detail-r">
-                        <img src="./assets/images/cnt_den.png" alt="" class="cnt-img-r">
-                        <img src="./assets/images/heart.png" alt="" class="cnt-icon">
+                        <img src="./frontend/image/cnt_den.png" alt="" class="cnt-img-r">
+                        <img src="./frontend/image/heart.png" alt="" class="cnt-icon">
                         <h1 class="cnt-title-r">Making a Housing Wage: Where  Restaurant Workers Can They Work</h1>
                         <div class="cnt-des">
                             <p class="xa-hoi">Xã hội</p>
@@ -115,8 +115,8 @@
                         </p>
                     </a>
                     <a href="chitiet.html" class="cnt-detail-r">
-                        <img src="./assets/images/cnt_den2.png" alt="" class="cnt-img-r">
-                        <img src="./assets/images/heart.png" alt="" class="cnt-icon">
+                        <img src="./frontend/image/cnt_den2.png" alt="" class="cnt-img-r">
+                        <img src="./frontend/image/heart.png" alt="" class="cnt-icon">
                         <h1 class="cnt-title-r">Making a Housing Wage: Where  Restaurant Workers Can They Work</h1>
                         <div class="cnt-des">
                             <p class="xa-hoi">Xã hội</p>
@@ -139,8 +139,8 @@
 
             <div class="video-detail">
                 <div class="v-box1">
-                    <img src="./assets/images/video_detail.png" alt="" class="v-img">
-                    <img src="./assets/images/heart.png" alt="" class="cnt-icon">
+                    <img src="./frontend/image/video_detail.png" alt="" class="v-img">
+                    <img src="./frontend/image/heart.png" alt="" class="cnt-icon">
                     <div class="v-detail">
                         <p class="v-title-r">Đi dạo cạnh đường cao tốc Pháp Vân Cầu Giẽ ổn không?</p>
                         <div class="cnt-des">
@@ -153,7 +153,7 @@
                 </div>
                 <div class="v-box2">
                     <a href="" class="v-click">
-                        <img src="./assets/images/video_img1.png" alt="" class="v-img">
+                        <img src="./frontend/image/video_img1.png" alt="" class="v-img">
                         <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
                         <div class="cnt-des">
                             <p class="cnt-name">5536 lượt xem</p>
@@ -162,17 +162,7 @@
                         </div>
                     </a>
                     <a href="" class="v-click">
-                        <img src="./assets/images/video_img2.png" alt="" class="v-img">
-                        <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
-                        <div class="cnt-des">
-                            <p class="cnt-name">5536 lượt xem</p>
-                            <p class="cnt-dot"></p>
-                            <p class="cnt-day">10/10/2022</p>
-                        </div>
-                    </a>
-
-                    <a href="" class="v-click">
-                        <img src="./assets/images/video_img2.png" alt="" class="v-img">
+                        <img src="./frontend/image/video_img2.png" alt="" class="v-img">
                         <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
                         <div class="cnt-des">
                             <p class="cnt-name">5536 lượt xem</p>
@@ -182,7 +172,7 @@
                     </a>
 
                     <a href="" class="v-click">
-                        <img src="./assets/images/video_img1.png" alt="" class="v-img">
+                        <img src="./frontend/image/video_img2.png" alt="" class="v-img">
                         <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
                         <div class="cnt-des">
                             <p class="cnt-name">5536 lượt xem</p>
@@ -192,7 +182,7 @@
                     </a>
 
                     <a href="" class="v-click">
-                        <img src="./assets/images/video_img2.png" alt="" class="v-img">
+                        <img src="./frontend/image/video_img1.png" alt="" class="v-img">
                         <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
                         <div class="cnt-des">
                             <p class="cnt-name">5536 lượt xem</p>
@@ -202,7 +192,17 @@
                     </a>
 
                     <a href="" class="v-click">
-                        <img src="./assets/images/video_detail.png" alt="" class="v-img">
+                        <img src="./frontend/image/video_img2.png" alt="" class="v-img">
+                        <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
+                        <div class="cnt-des">
+                            <p class="cnt-name">5536 lượt xem</p>
+                            <p class="cnt-dot"></p>
+                            <p class="cnt-day">10/10/2022</p>
+                        </div>
+                    </a>
+
+                    <a href="" class="v-click">
+                        <img src="./frontend/image/video_detail.png" alt="" class="v-img">
                         <p class="v-title">Making a Housing Wage: Where  Restaurant should l...</p>
                         <div class="cnt-des">
                             <p class="cnt-name">5536 lượt xem</p>
@@ -231,7 +231,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et scelerisque nullam lorem. Libero mi velit id vitae...
                         </p>
                     </div>
-                    <img src="./assets/images/list_img.png" alt="" class="img-list">
+                    <img src="./frontend/image/list_img.png" alt="" class="img-list">
                 </a>
                 <a href="#" class="li-detail">
                     <div class="li-des">
@@ -247,7 +247,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et scelerisque nullam lorem. Libero mi velit id vitae...
                         </p>
                     </div>
-                    <img src="./assets/images/list_img3.png" alt="" class="img-list">
+                    <img src="./frontend/image/list_img3.png" alt="" class="img-list">
                 </a>
                 <a href="#" class="li-detail">
                     <div class="li-des">
@@ -263,7 +263,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et scelerisque nullam lorem. Libero mi velit id vitae...
                         </p>
                     </div>
-                    <img src="./assets/images/list_img4.png" alt="" class="img-list">
+                    <img src="./frontend/image/list_img4.png" alt="" class="img-list">
                 </a>
                 <a href="#" class="li-detail">
                     <div class="li-des">
@@ -279,7 +279,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et scelerisque nullam lorem. Libero mi velit id vitae...
                         </p>
                     </div>
-                    <img src="./assets/images/list_img6.png" alt="" class="img-list">
+                    <img src="./frontend/image/list_img6.png" alt="" class="img-list">
                 </a>
         </div>
         <div class="more">
@@ -287,6 +287,6 @@
         </div>
     </div>
     </div>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./frontend/js/main.js"></script>
 </body>
 </html>
