@@ -42,7 +42,7 @@ Route::get('/profile', function () {
 })->middleware(['auth', 'verified']);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('FrontEnd.index');
 });
 
 Auth::routes();
